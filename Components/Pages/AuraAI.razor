@@ -1,0 +1,22 @@
+@page "/aura-ai"
+@inject AuraAiService Aura
+
+<h3>AURA</h3>
+
+<textarea @bind="userMessage"></textarea>
+<button @onclick="Ask">Ask</button>
+
+@if (!string.IsNullOrEmpty(response))
+{
+    <p><strong>AURA:</strong> @response</p>
+}
+
+@code {
+    string userMessage = "";
+    string response = "";
+
+    async Task Ask()
+    {
+        response = await Aura.AskAura(userMessage);
+    }
+}

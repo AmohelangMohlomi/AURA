@@ -9,6 +9,9 @@ builder.Services.AddRazorComponents()
     
 builder.Services.AddSingleton<GoalService>();
 
+builder.Services.AddHttpClient<AuraAiService>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
