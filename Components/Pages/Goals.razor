@@ -1,8 +1,36 @@
 @page "/goals"
+@inject GoalService GoalService
 
 <PageTitle>Goals</PageTitle>
 
-
 <h1>Goals</h1>
 
-<h2>Track the goals that matter</h2>
+<!-- <h3>Goals</h3> -->
+
+<input @bind="newGoalTitle" placeholder="New goal..." />
+<button @onclick="AddGoal">Add</button>
+
+<ul>
+    @foreach (var goal in GoalService.GetGoals())
+    {
+        <li>@goal.Title (@goal.Category)</li>
+    }
+</ul>
+
+@code {
+    string newGoalTitle = "";
+
+    void AddGoal()
+    {
+        if (!string.IsNullOrWhiteSpace(newGoalTitle))
+        {
+            GoalService.AddGoal(new Goal
+            {
+                Title = newGoalTitle,
+                Category = "General",
+                Priority = 1
+            });
+            newGoalTitle = "";
+        }
+    }
+}
