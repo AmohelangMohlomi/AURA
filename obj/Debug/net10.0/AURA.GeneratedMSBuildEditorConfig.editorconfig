@@ -30,8 +30,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mohlo/AURA/Components/Pages/Crisis.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDcmlzaXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mohlo/AURA/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mohlo/AURA/Components/Pages/Goals.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHb2Fscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mohlo/AURA/Components/Pages/Hobbies.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb2JiaWVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mohlo/AURA/Components/Pages/Home.razor]
@@ -42,8 +54,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mohlo/AURA/Components/Pages/Self-Care.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZWxmLUNhcmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mohlo/AURA/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mohlo/AURA/Components/Pages/Worst-Case.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXb3JzdC1DYXNlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mohlo/AURA/Components/Routes.razor]
