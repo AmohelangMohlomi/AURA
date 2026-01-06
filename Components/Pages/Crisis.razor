@@ -1,7 +1,64 @@
 @page "/crisis"
+@attribute [StreamRendering]
 
 <PageTitle>Crisis</PageTitle>
 
 <h1>Crisis</h1>
 
 <h2>You don't know what to do? I got you</h2>
+
+
+@if (issues == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Problem</th>
+                <th>Solution</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var issue in issues)
+            {
+                <tr>
+                    <td>@issue.Id</td>
+                    <td>@issue.Problem</td>
+                    <td>@issue.Solution</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code{
+    private CrisisManager[] issues;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulate asynchronous loading to demonstrate streaming rendering
+        await Task.Delay(500);
+
+        var id = new[] {1};
+        var problems = new[] { "Stress", "Anxiety", "Panic Attack", "Fanatasies", "Lazy" };
+        var solutions = new[] { "Meditation", "Breathe", "Call a friend", "Go for a walk", "Journal" };
+       issues = Enumerable.Range(1, 5).Select(index => new CrisisManager
+        {
+            Id = Random.Shared.Next(1,10),
+            Problem= problems[Random.Shared.Next(problems.Length)],
+            Solution = solutions[Random.Shared.Next(solutions.Length)]
+        }).ToArray();
+    
+}
+
+   private class CrisisManager
+{
+    public int Id { get; set; }
+    public string Problem { get; set; } = "";
+    public string Solution {get; set;} = "";
+}
+}

@@ -8,7 +8,6 @@ builder.Services.AddRazorComponents()
 
     
 builder.Services.AddSingleton<GoalService>();
-
 builder.Services.AddHttpClient<AuraAiService>();
 
 
