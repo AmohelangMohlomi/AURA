@@ -96,3 +96,52 @@ main[b-i2qpul4oso] {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+/* 🌙 AURA Starry Background */
+.aura-background[b-i2qpul4oso] {
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #2b0a3d 0%, #0b0215 100%);
+    position: relative;
+    overflow: hidden;
+    color: #f5e9ff;
+}
+
+/* ✨ Stars layer */
+.aura-background[b-i2qpul4oso]::before,
+.aura-background[b-i2qpul4oso]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-repeat: repeat;
+    pointer-events: none;
+    animation: starsMove-b-i2qpul4oso 120s linear infinite;
+}
+
+/* Small stars */
+.aura-background[b-i2qpul4oso]::before {
+    background-image:
+        radial-gradient(1px 1px at 20% 30%, white, transparent),
+        radial-gradient(1px 1px at 80% 70%, white, transparent),
+        radial-gradient(1px 1px at 50% 90%, white, transparent);
+    opacity: 0.6;
+}
+
+/* Bigger soft stars */
+.aura-background[b-i2qpul4oso]::after {
+    background-image:
+        radial-gradient(2px 2px at 40% 60%, #f7d6ff, transparent),
+        radial-gradient(2px 2px at 70% 20%, #ffd6f9, transparent);
+    opacity: 0.4;
+}
+
+@keyframes starsMove-b-i2qpul4oso {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-500px);
+    }
+}
