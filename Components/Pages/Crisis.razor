@@ -1,4 +1,5 @@
 @page "/crisis"
+@rendermode InteractiveServer
 @attribute [StreamRendering]
 
 <PageTitle>Crisis</PageTitle>
@@ -28,7 +29,7 @@ else
                 <tr>
                     <td>@issue.Id</td>
                     <td>@issue.Problem</td>
-                    <td>@issue.Solution</td>
+                    <td><button class="btn btn-primary" @onclick="IncrementCount">@issue.Solution</button></td>
                 </tr>
             }
         </tbody>
@@ -44,8 +45,8 @@ else
         await Task.Delay(500);
 
         var id = new[] {1};
-        var problems = new[] { "Stress", "Anxiety", "Panic Attack", "Fanatasies", "Lazy" };
-        var solutions = new[] { "Meditation", "Breathe", "Call a friend", "Go for a walk", "Journal" };
+        var problems = new[] { "Stress", "Anxiety", "Panic Attack", "Fanatasies", "Lazy","Overromantacising a man?" };
+        var solutions = new[] { "Click me", "Click me", "Click me", "Click me", "Cick me","Click me" };
        issues = Enumerable.Range(1, 5).Select(index => new CrisisManager
         {
             Id = Random.Shared.Next(1,10),
@@ -61,4 +62,11 @@ else
     public string Problem { get; set; } = "";
     public string Solution {get; set;} = "";
 }
+
+private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
 }
