@@ -145,3 +145,52 @@ main {
         transform: translateY(-500px);
     }
 }
+
+.home-container {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.aura-title {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.verse-text {
+    font-style: italic;
+    color: #ffd6f5;
+}
+
+.gentle-question {
+    margin-top: 0.5rem;
+    opacity: 0.9;
+}
+
+.aura-footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}

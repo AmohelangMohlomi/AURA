@@ -1,19 +1,55 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>AURA</PageTitle>
 
-<h1>AURA</h1>
+<div class="home-container">
 
-<h2>Welcome Back Gorgeous</h2>
+    <h1 class="aura-title">AURA</h1>
+    <h2 class="welcome-text">Welcome back, gorgeous 💖</h2>
 
-<p>I am AURA, Your goal, balance, and self-care BESTIE.</p>
+    <p class="intro-text">
+        I’m AURA — your goal, balance, and self-care bestie.
+    </p>
 
-<p>[Daily bible verse]</p>
+    <div class="card">
+        <h3>🌸 Daily Verse</h3>
+        <p class="verse-text">“@DailyVerse”</p>
+    </div>
 
-<p>[Today's date & a question on how you want to start off your day... MAYBE SOME MEDITATION?]</p>
+    <div class="card">
+        <h3>📅 Today</h3>
+        <p>@DateTime.Now.ToString("dddd, dd MMMM yyyy")</p>
+        <p class="gentle-question">
+            How would you like to start your day today?
+        </p>
+    </div>
 
-<p>[Feeling stressed?    SOLUTION]</p>
-<p>[Feeling anxious?    SOLUTION]</p>
-<p>[Feeling lukewarm?    SOLUTION]</p>
+    <div class="card">
+        <h3>💭 How are you feeling?</h3>
+        <ul>
+            <li><strong>Stressed?</strong> → Pause. Breathe. One thing at a time.</li>
+            <li><strong>Anxious?</strong> → You are safe. You are held.</li>
+            <li><strong>Lukewarm?</strong> → Rest is part of growth.</li>
+        </ul>
+    </div>
 
-<p>[footer AURA 2025]</p>
+    <footer class="aura-footer">
+        AURA © 2025 ✨
+    </footer>
+
+</div>
+
+@code {
+    string DailyVerse => verses[
+        DateTime.Now.Day % verses.Length
+    ];
+
+    string[] verses = new[]
+    {
+        "Be still, and know that I am God. — Psalm 46:10",
+        "I can do all things through Christ who strengthens me. — Philippians 4:13",
+        "The Lord is my shepherd; I shall not want. — Psalm 23:1",
+        "She is clothed with strength and dignity. — Proverbs 31:25",
+        "Trust in the Lord with all your heart. — Proverbs 3:5"
+    };
+}
