@@ -147,54 +147,6 @@ main[b-i2qpul4oso] {
     }
 }
 
-.home-container[b-i2qpul4oso] {
-    max-width: 800px;
-    margin: auto;
-    padding-top: 3rem;
-}
-
-.aura-title[b-i2qpul4oso] {
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    text-align: center;
-}
-
-.welcome-text[b-i2qpul4oso] {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 300;
-}
-
-.intro-text[b-i2qpul4oso] {
-    text-align: center;
-    margin-bottom: 2rem;
-    opacity: 0.85;
-}
-
-.card[b-i2qpul4oso] {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    backdrop-filter: blur(10px);
-}
-
-.verse-text[b-i2qpul4oso] {
-    font-style: italic;
-    color: #ffd6f5;
-}
-
-.gentle-question[b-i2qpul4oso] {
-    margin-top: 0.5rem;
-    opacity: 0.9;
-}
-
-.aura-footer[b-i2qpul4oso] {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 0.85rem;
-    opacity: 0.6;
-}
 /* /Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-cfdpr0jrf5] {
     appearance: none;
