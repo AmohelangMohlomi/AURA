@@ -1,17 +1,21 @@
+/* ===== Layout Base ===== */
 .page[b-i2qpul4oso] {
     position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 main[b-i2qpul4oso] {
     flex: 1;
 }
 
+/* ===== Sidebar ===== */
 .sidebar[b-i2qpul4oso] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
+/* ===== Top Navigation ===== */
 .top-row[b-i2qpul4oso] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
@@ -19,29 +23,34 @@ main[b-i2qpul4oso] {
     height: 3.5rem;
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 
-    .top-row[b-i2qpul4oso]  a, .top-row[b-i2qpul4oso]  .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
+.top-row[b-i2qpul4oso]  a,
+.top-row[b-i2qpul4oso]  .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
 
-    .top-row[b-i2qpul4oso]  a:hover, .top-row[b-i2qpul4oso]  .btn-link:hover {
-        text-decoration: underline;
-    }
+.top-row[b-i2qpul4oso]  a:hover,
+.top-row[b-i2qpul4oso]  .btn-link:hover {
+    text-decoration: underline;
+}
 
-    .top-row[b-i2qpul4oso]  a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.top-row[b-i2qpul4oso]  a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+/* ===== Responsive ===== */
 @media (max-width: 640.98px) {
     .top-row[b-i2qpul4oso] {
         justify-content: space-between;
     }
 
-    .top-row[b-i2qpul4oso]  a, .top-row[b-i2qpul4oso]  .btn-link {
+    .top-row[b-i2qpul4oso]  a,
+    .top-row[b-i2qpul4oso]  .btn-link {
         margin-left: 0;
     }
 }
@@ -61,7 +70,6 @@ main[b-i2qpul4oso] {
     .top-row[b-i2qpul4oso] {
         position: sticky;
         top: 0;
-        z-index: 1;
     }
 
     .top-row.auth[b-i2qpul4oso]  a:first-child {
@@ -70,12 +78,14 @@ main[b-i2qpul4oso] {
         width: 0;
     }
 
-    .top-row[b-i2qpul4oso], article[b-i2qpul4oso] {
+    .top-row[b-i2qpul4oso],
+    article[b-i2qpul4oso] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
 }
 
+/* ===== Error UI ===== */
 #blazor-error-ui[b-i2qpul4oso] {
     color-scheme: light only;
     background: lightyellow;
@@ -90,53 +100,58 @@ main[b-i2qpul4oso] {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss[b-i2qpul4oso] {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss[b-i2qpul4oso] {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
 
-/* 🌙 AURA Starry Background */
+/* ======================================================
+   🌙 AURA STAR BACKGROUND (WORKING VERSION)
+   ====================================================== */
+
 .aura-background[b-i2qpul4oso] {
+    position: relative;
     min-height: 100vh;
     background: radial-gradient(ellipse at bottom, #2b0a3d 0%, #0b0215 100%);
-    position: relative;
     overflow: hidden;
     color: #f5e9ff;
 }
 
-/* ✨ Stars layer */
-.aura-background[b-i2qpul4oso]::before,
+/* ✨ Small white stars */
+.aura-background[b-i2qpul4oso]::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: 0.6;
+    animation: starsMove-b-i2qpul4oso 120s linear infinite, starsTwinkle-b-i2qpul4oso 6s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* 🌸 Soft pink stars */
 .aura-background[b-i2qpul4oso]::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background-repeat: repeat;
+    inset: 0;
+    background-image: radial-gradient(#ffd6f5 1.5px, transparent 1.5px);
+    background-size: 150px 150px;
+    opacity: 0.35;
+    animation: starsMove-b-i2qpul4oso 200s linear infinite;
+    z-index: 0;
     pointer-events: none;
-    animation: starsMove-b-i2qpul4oso 120s linear infinite;
 }
 
-/* Small stars */
-.aura-background[b-i2qpul4oso]::before {
-    background-image:
-        radial-gradient(1px 1px at 20% 30%, white, transparent),
-        radial-gradient(1px 1px at 80% 70%, white, transparent),
-        radial-gradient(1px 1px at 50% 90%, white, transparent);
-    opacity: 0.6;
+/* Content always above stars */
+.aura-background > *[b-i2qpul4oso] {
+    position: relative;
+    z-index: 1;
 }
 
-/* Bigger soft stars */
-.aura-background[b-i2qpul4oso]::after {
-    background-image:
-        radial-gradient(2px 2px at 40% 60%, #f7d6ff, transparent),
-        radial-gradient(2px 2px at 70% 20%, #ffd6f9, transparent);
-    opacity: 0.4;
-}
-
+/* ===== Animations ===== */
 @keyframes starsMove-b-i2qpul4oso {
     from {
         transform: translateY(0);
@@ -146,3 +161,11 @@ main[b-i2qpul4oso] {
     }
 }
 
+@keyframes starsTwinkle-b-i2qpul4oso {
+    0%, 100% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
