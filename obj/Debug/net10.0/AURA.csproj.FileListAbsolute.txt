@@ -24,7 +24,6 @@ C:\Users\mohlo\AURA\obj\Debug\net10.0\scopedcss\Components\Layout\NavMenu.razor.
 C:\Users\mohlo\AURA\obj\Debug\net10.0\scopedcss\Components\Layout\ReconnectModal.razor.rz.scp.css
 C:\Users\mohlo\AURA\obj\Debug\net10.0\scopedcss\bundle\AURA.styles.css
 C:\Users\mohlo\AURA\obj\Debug\net10.0\scopedcss\projectbundle\AURA.bundle.scp.css
-C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\9rstiqpwrt-{0}-vecy9xb8qn-vecy9xb8qn.gz
 C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\2nyry06q2l-{0}-bqjiyaj88i-bqjiyaj88i.gz
 C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\uwo6rr1hfl-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\jmanyqa5ju-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -72,8 +71,6 @@ C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\hw9nnmt73m-{0}-0j3bgjxly4-0j3bg
 C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\mrfu0ivl1d-{0}-13ja33weya-13ja33weya.gz
 C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\asg6bfo1hj-{0}-wmp8iwak4q-wmp8iwak4q.gz
 C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\g2z671l93d-{0}-2lgipwaf5j-2lgipwaf5j.gz
-C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\64d158lr98-{0}-hhohji704t-hhohji704t.gz
-C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\vpyi3a5q2b-{0}-hhohji704t-hhohji704t.gz
 C:\Users\mohlo\AURA\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\mohlo\AURA\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\mohlo\AURA\obj\Debug\net10.0\staticwebassets.development.json
@@ -84,3 +81,6 @@ C:\Users\mohlo\AURA\obj\Debug\net10.0\refint\AURA.dll
 C:\Users\mohlo\AURA\obj\Debug\net10.0\AURA.pdb
 C:\Users\mohlo\AURA\obj\Debug\net10.0\AURA.genruntimeconfig.cache
 C:\Users\mohlo\AURA\obj\Debug\net10.0\ref\AURA.dll
+C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\64d158lr98-{0}-83e9i6vdmt-83e9i6vdmt.gz
+C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\vpyi3a5q2b-{0}-83e9i6vdmt-83e9i6vdmt.gz
+C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\9rstiqpwrt-{0}-gnh88l3zwv-gnh88l3zwv.gz

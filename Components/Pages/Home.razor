@@ -19,10 +19,29 @@
     <div class="card">
         <h3 class="verse-text">📅 Today</h3>
         <p class="verse-text">@DateTime.Now.ToString("dddd, dd MMMM yyyy")</p>
-        <p class="gentle-question">
-            How would you like to start your day today?
-        </p>
-    </div>
+     
+        <h3 class="daily-question">
+            How would you like to start your day?
+        </h3>
+
+        <div class="start-options">
+            <NavLink class="option-card" href="/meditation">
+                Calm & Centered
+            </NavLink>
+             <NavLink class="option-card" href="/meditation">
+                 Reflection & Prayer
+            </NavLink>
+             <NavLink class="option-card" href="/meditation">
+                Focus & Discipline
+            </NavLink>
+             <NavLink class="option-card" href="/meditation">
+                 Gentle Self-Care
+            </NavLink>
+              <NavLink class="option-card" href="/meditation">
+                 Therapy
+            </NavLink>
+        </div>
+        </div>
 
     <div class="card">
         <h3 class="verse-text" >💭 How are you feeling?</h3>
@@ -53,3 +72,5 @@
         "Trust in the Lord with all your heart. — Proverbs 3:5"
     };
 }
+
+

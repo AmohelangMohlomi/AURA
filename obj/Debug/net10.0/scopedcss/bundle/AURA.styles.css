@@ -18,7 +18,7 @@ main[b-i2qpul4oso] {
 
 /* ===== Top Navigation ===== */
 .top-row[b-i2qpul4oso] {
-    background-color: #f7f7f7;
+    background-color:#28073a;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
     height: 3.5rem;
@@ -170,6 +170,48 @@ main[b-i2qpul4oso] {
         opacity: 0.8;
     }
 }
+
+/* ===== Title ===== */
+.aura-title[b-i2qpul4oso] {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    letter-spacing: 0.15em;
+}
+
+.welcome-text[b-i2qpul4oso] {
+    text-align: center;
+    opacity: 0.85;
+}
+
+/* ===== Date ===== */
+.date-container[b-i2qpul4oso] {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.day-name[b-i2qpul4oso] {
+    font-size: 1.1rem;
+    letter-spacing: 0.2em;
+    opacity: 0.8;
+}
+
+.date-circle[b-i2qpul4oso] {
+    margin: 0.5rem auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ffd6f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgba(255, 214, 245, 0.1);
+    box-shadow: 0 0 15px rgba(255, 214, 245, 0.4);
+}
+
+
 /* /Components/Layout/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-cfdpr0jrf5] {
     appearance: none;

@@ -110,3 +110,44 @@ h1:focus {
     opacity: 0.6;
 }
 
+
+/* ===== Question ===== */
+.daily-question {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    color: #ffd6f5;
+}
+
+/* ===== Options ===== */
+.start-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.option-card {
+    padding: 1.2rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 214, 245, 0.3);
+    color: #ffd6f5;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    
+}
+
+.option-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 214, 245, 0.15);
+    box-shadow: 0 10px 25px rgba(255, 214, 245, 0.3);
+    color: #ffd6f5;
+}
+
+.option-card.active {
+    border-color: #ffd6f5;
+    box-shadow: 0 0 20px rgba(255, 214, 245, 0.6);
+}
