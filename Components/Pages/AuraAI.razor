@@ -10,6 +10,10 @@
 <textarea @bind="userMessage"></textarea>
 <button @onclick="Ask">Ask</button>
 
+<footer class="aura-footer">
+        AURA © 2025 
+</footer>
+
 @if (!string.IsNullOrEmpty(response))
 {
     <p><strong>AURA:</strong> @response</p>

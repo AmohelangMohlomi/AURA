@@ -8,10 +8,10 @@
 
 <h2>You don't know what to do? I got you</h2>
 
-
+<div class="card">
 @if (issues == null)
 {
-    <p><em>Loading...</em></p>
+    <p><em class="verse-text">Loading...</em></p>
 }
 else
 {
@@ -29,12 +29,19 @@ else
                 <tr>
                     <td>@issue.Id</td>
                     <td>@issue.Problem</td>
-                    <td><button class="btn btn-primary" @onclick="IncrementCount">@issue.Solution</button></td>
+                    <td><NavLink class="option-card" href="/meditation">
+                    Click me
+                    </NavLink></td>
                 </tr>
             }
         </tbody>
     </table>
 }
+</div>
+
+<footer class="aura-footer">
+        AURA © 2025 
+</footer>
 
 @code{
     private CrisisManager[] issues;

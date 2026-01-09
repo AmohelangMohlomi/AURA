@@ -26,12 +26,12 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mohlo/AURA/Components/Pages/AuraAI.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXJhQUkucmF6b3I=
+[c:/Users/mohlo/AURA/Components/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mohlo/AURA/Components/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+[c:/Users/mohlo/AURA/Components/Pages/AuraAI.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXJhQUkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/mohlo/AURA/Components/Pages/Crisis.razor]
@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [c:/Users/mohlo/AURA/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/mohlo/AURA/Components/Pages/Focus.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGb2N1cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/mohlo/AURA/Components/Pages/Goals.razor]
@@ -66,12 +70,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOb3RGb3VuZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[c:/Users/mohlo/AURA/Components/Pages/Prayer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcmF5ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/mohlo/AURA/Components/Pages/Self-Care.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZWxmLUNhcmUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/mohlo/AURA/Components/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+[c:/Users/mohlo/AURA/Components/Pages/Work-out.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXb3JrLW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/mohlo/AURA/Components/Pages/Worst-Case.razor]

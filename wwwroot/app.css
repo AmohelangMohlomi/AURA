@@ -94,6 +94,7 @@ h1:focus {
 .verse-text {
     font-style: italic;
     color: #ffd6f5;
+    text-align: center;
 }
 
 .gentle-question {

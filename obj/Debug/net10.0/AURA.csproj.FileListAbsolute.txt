@@ -83,4 +83,4 @@ C:\Users\mohlo\AURA\obj\Debug\net10.0\AURA.genruntimeconfig.cache
 C:\Users\mohlo\AURA\obj\Debug\net10.0\ref\AURA.dll
 C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\64d158lr98-{0}-83e9i6vdmt-83e9i6vdmt.gz
 C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\vpyi3a5q2b-{0}-83e9i6vdmt-83e9i6vdmt.gz
-C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\9rstiqpwrt-{0}-gnh88l3zwv-gnh88l3zwv.gz
+C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\9rstiqpwrt-{0}-3krixulrtd-3krixulrtd.gz
