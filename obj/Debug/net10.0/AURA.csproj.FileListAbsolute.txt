@@ -81,6 +81,6 @@ C:\Users\mohlo\AURA\obj\Debug\net10.0\refint\AURA.dll
 C:\Users\mohlo\AURA\obj\Debug\net10.0\AURA.pdb
 C:\Users\mohlo\AURA\obj\Debug\net10.0\AURA.genruntimeconfig.cache
 C:\Users\mohlo\AURA\obj\Debug\net10.0\ref\AURA.dll
-C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\64d158lr98-{0}-83e9i6vdmt-83e9i6vdmt.gz
-C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\vpyi3a5q2b-{0}-83e9i6vdmt-83e9i6vdmt.gz
-C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\9rstiqpwrt-{0}-3krixulrtd-3krixulrtd.gz
+C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\9rstiqpwrt-{0}-9j9uuv0mtv-9j9uuv0mtv.gz
+C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\64d158lr98-{0}-3486ymqenu-3486ymqenu.gz
+C:\Users\mohlo\AURA\obj\Debug\net10.0\compressed\vpyi3a5q2b-{0}-3486ymqenu-3486ymqenu.gz

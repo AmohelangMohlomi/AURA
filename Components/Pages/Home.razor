@@ -47,11 +47,16 @@
         </div>
 
     <div class="card">
-        <h3 class="verse-text" >Words of Affirmation</h3>
-        <p class="verse-text">
-            Remeber that you are a child of God you and that you are loved.
-        </p>
-    </div>
+        <h3 class="verse-text">Words of Affirmation</h3>
+
+            <p class="affirmation-category">
+                @CurrentAffirmationCategory
+            </p>
+
+            <p class="verse-text">
+                “@DailyAffirmation”
+            </p>
+</div>
 
     <footer class="aura-footer">
         AURA © 2025 
@@ -60,6 +65,7 @@
 </div>
 
 @code {
+    // ---------------- DAILY VERSES ----------------
     string DailyVerse => verses[
         DateTime.Now.Day % verses.Length
     ];
@@ -72,6 +78,67 @@
         "She is clothed with strength and dignity. — Proverbs 31:25",
         "Trust in the Lord with all your heart. — Proverbs 3:5"
     };
+
+    // ---------------- AFFIRMATIONS ----------------
+
+    // Convert dictionary to list for indexing
+    List<KeyValuePair<string, string[]>> AffirmationList =>
+        affirmationCategories.ToList();
+
+    int DayIndex => DateTime.Now.Day % AffirmationList.Count;
+
+    string CurrentAffirmationCategory =>
+        AffirmationList[DayIndex].Key;
+
+    string DailyAffirmation
+    {
+        get
+        {
+            var affirmations = AffirmationList[DayIndex].Value;
+            return affirmations[
+                DateTime.Now.Day % affirmations.Length
+            ];
+        }
+    }
+
+    Dictionary<string, string[]> affirmationCategories =
+        new()
+        {
+            {
+                "Spiritual",
+                new[]
+                {
+                    "I am a child of God, deeply loved and divinely guided.",
+                    "God’s peace guards my heart and mind today.",
+                    "I walk by faith, not by fear."
+                }
+            },
+            {
+                "Motivation",
+                new[]
+                {
+                    "I am disciplined even when motivation fades.",
+                    "Small steps today lead to powerful results.",
+                    "I finish what I start."
+                }
+            },
+            {
+                "Self-Love",
+                new[]
+                {
+                    "I treat myself with patience and kindness.",
+                    "I am worthy of rest, joy, and softness.",
+                    "I do not need to earn my worth."
+                }
+            },
+            {
+                "Discipline",
+                new[]
+                {
+                    "I choose consistency over comfort.",
+                    "My future self thanks me for today’s effort.",
+                    "I keep my promises to myself."
+                }
+            }
+        };
 }
-
-

@@ -152,3 +152,11 @@ h1:focus {
     border-color: #ffd6f5;
     box-shadow: 0 0 20px rgba(255, 214, 245, 0.6);
 }
+
+.affirmation-category {
+    text-align: center;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+    color: #ffd6f5;
+}
