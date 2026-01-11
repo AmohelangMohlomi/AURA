@@ -1,0 +1,40 @@
+@page "/"
+@inject UserService UserService
+@inject NavigationManager Nav
+
+<h1>Welcome back to AURA ✨</h1>
+
+<div class="card">
+    <input placeholder="Email" @bind="email" />
+    <input placeholder="Password" type="password" @bind="password" />
+
+    <button @onclick="HandleLogin">Login</button>
+
+    @if (!string.IsNullOrEmpty(error))
+    {
+        <p style="color:red">@error</p>
+    }
+
+    <p class="verse-text">
+        Don’t have an account?
+        <a href="/signup">Sign up</a>
+    </p>
+</div>
+
+@code {
+    string email = "";
+    string password = "";
+    string error = "";
+
+    void HandleLogin()
+    {
+        if (UserService.Login(email, password))
+        {
+            Nav.NavigateTo("/home");
+        }
+        else
+        {
+            error = "Invalid email or password.";
+        }
+    }
+}

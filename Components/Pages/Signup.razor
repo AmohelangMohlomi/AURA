@@ -1,0 +1,44 @@
+@page "/signup"
+
+@inject UserService UserService
+@inject NavigationManager Nav
+
+<h1>Create Your AURA account✨</h1>
+
+<div class="card">
+    <input placeholder="Name" @bind="name" />
+    <input placeholder="Email" @bind="email" />
+    <input placeholder="Password" type="password" @bind="password" />
+
+    <button @onclick="HandleSignup">Sign Up</button>
+
+    @if (!string.IsNullOrEmpty(error))
+    {
+        <p style="color:red">@error</p>
+    }
+
+    <p class="verse-text">
+        Already have an account?
+        <a href="/">Login</a>
+    </p>
+</div>
+
+@code {
+    string name = "";
+    string email = "";
+    string password = "";
+    string error = "";
+
+    void HandleSignup()
+    {
+        var success = UserService.Signup(name, email, password);
+
+        if (!success)
+        {
+            error = "Email already exists.";
+            return;
+        }
+
+        Nav.NavigateTo("/login");
+    }
+}

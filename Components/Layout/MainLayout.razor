@@ -1,4 +1,6 @@
 ﻿@inherits LayoutComponentBase
+@inject UserService UserService
+@inject NavigationManager Nav
 
 <div class="page">
     <div class="sidebar">
@@ -7,14 +9,19 @@
 
     <main>
         <div class="top-row px-4">
-            <a href="/about" target="_blank">About</a>
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">Logout</a>
+            <a href="/about">About</a>
+
+            @if (UserService.IsLoggedIn)
+            {
+                <button class="logout-btn" @onclick="Logout">
+                    Logout
+                </button>
+            }
         </div>
 
         <article class="content px-4 aura-background">
-        @Body
+            @Body
         </article>
-
     </main>
 </div>
 
@@ -23,3 +30,11 @@
     <a href="." class="reload">Reload</a>
     <span class="dismiss">🗙</span>
 </div>
+
+@code {
+    void Logout()
+    {
+        UserService.Logout();
+        Nav.NavigateTo("/login", true);
+    }
+}

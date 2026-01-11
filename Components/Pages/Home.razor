@@ -1,11 +1,24 @@
-﻿@page "/"
+﻿@page "/home"
+@inject UserService UserService
+@inject NavigationManager Nav
 
+@if (UserService.CurrentUser is null)
+{
+    <p class="verse-text">Redirecting...</p>
+}
+else
+{
+    <h2 class="welcome-text">
+        Welcome back, @UserService.CurrentUser.Name 💖
+    </h2>
 <PageTitle>AURA</PageTitle>
 
 <div class="home-container">
 
     <h1 class="aura-title">AURA</h1>
-    <h2 class="welcome-text">Welcome back, gorgeous 💖</h2>
+    <h2 class="welcome-text">
+        Welcome back, @UserService.CurrentUser!.Name 💖
+    </h2>
 
     <p class="intro-text">
         I’m AURA — your goal, balance, and self-care bestie.
@@ -141,4 +154,5 @@
                 }
             }
         };
+}
 }

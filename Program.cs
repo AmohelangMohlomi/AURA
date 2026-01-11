@@ -9,6 +9,8 @@ builder.Services.AddRazorComponents()
     
 builder.Services.AddSingleton<GoalService>();
 builder.Services.AddHttpClient<AuraAiService>();
+builder.Services.AddSingleton<UserService>();
+
 
 
 var app = builder.Build();

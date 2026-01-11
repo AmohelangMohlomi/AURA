@@ -160,3 +160,16 @@ h1:focus {
     margin-bottom: 0.5rem;
     color: #ffd6f5;
 }
+
+.logout-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #a855f7;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #a855f7;
+}
